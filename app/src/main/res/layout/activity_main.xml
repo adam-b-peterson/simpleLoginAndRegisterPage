@@ -35,19 +35,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="login"
-            android:id="@+id/btLogin"
+            android:id="@+id/btnLogin"
             android:padding="15dp"
-            android:layout_marginTop="15dp"
-            android:onClick="userLogin"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="register"
-            android:id="@+id/btRegister"
-            android:padding="15dp"
-            android:layout_marginTop="15dp"
-            android:onClick="userRegister"/>
+            android:layout_marginTop="15dp"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

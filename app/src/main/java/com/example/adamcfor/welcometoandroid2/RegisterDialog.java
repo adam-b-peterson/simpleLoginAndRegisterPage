@@ -32,12 +32,6 @@ public class RegisterDialog extends AppCompatDialogFragment {
         final View view = inflater.inflate(R.layout.layout_dialog, null);
 
         builder.setView(view).setTitle("Register");
-//                .setPositiveButton("register", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        saveInfo(view);
-//                    }
-//                });
 
         etRegisterEmail = (EditText) view.findViewById(R.id.etRegisterEmail);
         etRegisterPassword = (EditText) view.findViewById(R.id.etRegisterPassword);
@@ -86,6 +80,7 @@ public class RegisterDialog extends AppCompatDialogFragment {
             editor.putString(MainActivity.USER_PASSWORD, etRegisterPassword.getText().toString());
             editor.apply();
             Toast.makeText(this.getContext(), "Registered", Toast.LENGTH_LONG).show();
+            this.dismiss();
         } else {
 
             etRegisterPassword.setHint("Two passwords are not match");
