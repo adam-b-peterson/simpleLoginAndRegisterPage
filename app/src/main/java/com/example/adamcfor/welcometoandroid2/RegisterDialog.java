@@ -82,9 +82,8 @@ public class RegisterDialog extends AppCompatDialogFragment {
             Toast.makeText(this.getContext(), "Registered", Toast.LENGTH_LONG).show();
             this.dismiss();
         } else {
-
-            etRegisterPassword.setHint("Two passwords are not match");
-            etRegisterPasswordReenter.setHint("Two passwords are not match");
+            
+            Toast.makeText(getContext(), "Two passwords are not match. Please try again.", Toast.LENGTH_LONG).show();
 
             etRegisterPassword.setText("");
             etRegisterPasswordReenter.setText("");

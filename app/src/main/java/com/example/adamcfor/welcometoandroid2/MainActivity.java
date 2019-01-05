@@ -37,12 +37,8 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
         sharedPreferences = getSharedPreferences(USER_DATA, Context.MODE_PRIVATE);
-        
+
         //this part is for testing the register page, as once registered account it does not come out
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putString(MainActivity.USER_NAME, "");
-//        editor.putString(MainActivity.USER_PASSWORD, "");
-//        editor.apply();
 
         String userName = sharedPreferences.getString(USER_NAME,"");
         if (userName.equals("")){
